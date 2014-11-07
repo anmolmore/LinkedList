@@ -17,6 +17,11 @@ public class SinglyLinkedList {
 		size++;
 	}
 	
+	/**
+	 *  Add item at given index
+	 * @param item
+	 * @param index
+	 */
 	public void addAtIndex(Object item, int index) {
 		Node newNode = new Node(item);
 		Node currentNode = head;
