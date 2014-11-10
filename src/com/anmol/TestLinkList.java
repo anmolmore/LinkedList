@@ -8,6 +8,7 @@ public class TestLinkList {
 		single.addAtFront(25);
 		single.addAtEnd(100);
 		single.addAtIndex(1000, 0);
+		single.addAtFront(34);
 		System.out.println(single);
 
 	}

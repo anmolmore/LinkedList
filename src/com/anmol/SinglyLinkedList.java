@@ -2,7 +2,7 @@ package com.anmol;
 
 public class SinglyLinkedList {
 	
-	private Node head;
+	Node head;
 	private int size;
 	
 	public SinglyLinkedList () {
@@ -45,9 +45,9 @@ public class SinglyLinkedList {
 	
 	public String toString() {
 		String linkList = "";
-		Node node = head.next;
-		while(node!=null) {
-			linkList += "[" + node.item + "]";
+		Node node = head;
+		while(node.next!=null) {
+			linkList += "[" + node.next.item + "]";
 			node = node.next;
 		}
 		return linkList;
@@ -60,9 +60,9 @@ public class SinglyLinkedList {
 		return true;
 	}
 	
-	private class Node {
-		private Object item;
-		private Node next;
+	public class Node {
+		Object item;
+		Node next;
 		
 		public Node(Object item) {
 			this.item = item;
