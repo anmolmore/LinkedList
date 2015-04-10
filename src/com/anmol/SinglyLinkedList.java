@@ -18,7 +18,7 @@ public class SinglyLinkedList {
 	}
 	
 	/**
-	 *  Add item at given index
+	 * Add item at given index
 	 * @param item
 	 * @param index
 	 */
